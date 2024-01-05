@@ -11,6 +11,11 @@
     --fontHero:    'Lalezar';
     --fontHeading: 'Lekton';
 
+    --colMain:   #000000;
+    --colHead:   #00BDF9;
+    --colHover:  #0091be;
+    --colBorder: #b723ba;
+
     font-family: var(--fontMain);
 }
 
