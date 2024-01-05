@@ -1,5 +1,24 @@
 
 
+/*
+--------------------------------
+   VARIABLES
+--------------------------------
+*/
+
+:root {
+    --fontMain:    'Lato';
+    --fontHero:    'Lalezar';
+    --fontHeading: 'Lekton';
+
+    font-family: var(--fontMain);
+}
+
+/*
+--------------------------------
+   FONTS 
+--------------------------------
+*/
 
 /*
    web font with chevron -------------------
@@ -26,4 +45,19 @@
 }
 
 
-  
+/*
+   fonts -------------------
+*/
+
+h1 + p {
+    font-family: var(--fontMain);
+    font-weight: 300;
+}
+
+#promo-offer h2 + p {
+    font-family: var(--fontHero);
+}
+
+h3 {
+    font-family: var(--fontHeading);
+}
