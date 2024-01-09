@@ -6,7 +6,7 @@
 --------------------------------
 */
 
-:root {
+body {
     --fontMain:    'Lato';
     --fontHero:    'Lalezar';
     --fontHeading: 'Lekton';
@@ -17,6 +17,8 @@
     --colBorder: #b723ba;
 
     font-family: var(--fontMain);
+    background-color: #706a6a;
+    margin: 2em;
 }
 
 /*
@@ -43,11 +45,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
-[class^=icon] > span {
-    position:absolute;
-    left:-999em;
-}
 
 
 /*
@@ -65,4 +62,46 @@ h1 + p {
 
 h3 {
     font-family: var(--fontHeading);
+}
+
+/*
+--------------------------------
+   LAYOUT
+--------------------------------
+*/
+
+/*
+   hero -------------------
+*/
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, [class^=icon] > span {
+    position:absolute;
+    left:-999em;
+}
+
+#hero p {
+    margin-bottom: 1em;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+#hero nav {
+    padding: 1em;
+}
+
+#hero ul {
+    display: flex;
+}
+
+#hero ul li {
+    padding: 1em;
 }
