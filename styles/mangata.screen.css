@@ -98,8 +98,8 @@ h1,
 
 #page-header p {
     margin-bottom: 1em;
-    font-size: 1.4rem;
-    letter-spacing: 0.4rem;
+    font-size: min(1.4rem, 3.5vw);
+    letter-spacing: min(0.4rem, 1.2vw);
 }
 
 #page-header img {
@@ -108,8 +108,8 @@ h1,
 }
 
 #page-header nav {
-    padding: 0.5em;
-    font-size: 1.25em;
+    padding: min(0.5em, 1vw);
+    font-size: min(1.25em, 3.5vw);
     text-transform: uppercase;
 }
 
@@ -148,19 +148,19 @@ main article:first-child {
     flex-direction: column;
     align-items: center;
     text-transform: uppercase;
-    border: var(--colBorder) var(--borHero) solid ;
-    border-radius: 80px;
-    padding: 2em;
-    width: 800px;
+    border: var(--colBorder) min(var(--borHero), 1vw) solid ;
+    border-radius: min(80px, 6vw);
+    padding: min(2em, 4vw);
+    width: min(680px, 98%);
 }
 
 #promo-offer h2 + p {
-    font-size: 5rem;
+    font-size: min(5rem, 10vw);
     color: var(--colHead)
 }
 
 #promo-offer p:last-child {
-    font-size: 3.5rem;
+    font-size: min(3.5rem, 8vw);
     color: var(--colBorder);
 }
 
@@ -197,4 +197,19 @@ footer {
 
 footer img {
     width: 150px;
+}
+
+
+/*
+   MQ -------------------
+*/
+
+@media only screen and (max-width: 450px) {
+    #page-header p {
+        text-transform: uppercase;
+    }
+
+    #promo-offer h2 + p {
+        font-size: 8.5vw;
+    }
 }
