@@ -212,4 +212,18 @@ footer img {
     #promo-offer h2 + p {
         font-size: 8.5vw;
     }
+
+    #offerings {
+        flex-direction: column;
+    }
+
+    #offerings article {
+        width: 100%;
+    }
+    
+    #offerings img {
+        border-radius: 0%;
+        width: 90%;
+        height: 50%;
+    }
 }
